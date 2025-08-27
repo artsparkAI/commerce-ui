@@ -49,7 +49,7 @@ const getComponentFiles = async (files: File[], registryType: string) => {
         type: registryType,
         content: fileContent,
         path: normalizedPath,
-        target: `/components/commerce-ui/${fileName}`,
+        target: `components/commerce-ui/${fileName}`,
       };
     }
     const normalizedPath = file.path.startsWith("/")
@@ -64,11 +64,11 @@ const getComponentFiles = async (files: File[], registryType: string) => {
     const getTargetPath = (type: string) => {
       switch (type) {
         case "registry:hook":
-          return `/hooks/${fileName}`;
+          return `hooks/${fileName}`;
         case "registry:lib":
-          return `/lib/${fileName}`;
+          return `lib/${fileName}`;
         default:
-          return `/components/commerce-ui/${fileName}`;
+          return `components/commerce-ui/${fileName}`;
       }
     };
 
