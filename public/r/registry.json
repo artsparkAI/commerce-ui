@@ -1,7 +1,7 @@
 {
   "$schema": "https://ui.shadcn.com/schema/registry.json",
   "name": "commerce-ui",
-  "homepage": "https://ui.stackzero.co",
+  "homepage": "https://api.github.com/repos/artsparkAI/commerce-ui/contents/public",
   "items": [
     {
       "name": "utils",
